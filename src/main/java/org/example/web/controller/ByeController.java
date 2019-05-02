@@ -24,7 +24,7 @@ public class ByeController
    * Displays the form binding page.
    */
   @GetMapping(PATH_BYE)
-  public String bye(@RequestParam(value="name",required=false, defaultValue="World")String name, Model model)
+  public String bye(@RequestParam(value="name",required=false, defaultValue="Universe")String name, Model model)
   {
 	  model.addAttribute("name",name);
     return VIEW_BYE;
